@@ -1,0 +1,249 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color:  #575757;
+    background-image: linear-gradient(
+        to right,
+        #565a5470,
+        #4d524b71),
+        url(../css/img/pueblo.png);
+    background-size: cover;
+    background-position: top;
+}
+
+.contenedor-principal{
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows: minmax(100px,auto);
+}
+
+.contenedor-1{
+    background:rgba(242,81,103,255);
+    clip-path: polygon(8% 0,92% 0,100% 8%,100% 92%, 92% 100%, 8% 100%,0 92%, 0 8%);
+    grid-column: 1/2;
+    height: 60vh;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: repeat(13,1fr);
+}
+
+.contenedor-2{
+    background-size: contain;
+    clip-path: polygon(0 0,100% 0,100% 100%, 0 100%);
+    grid-column: 2/3;
+    height: 60vh;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: repeat(13,1fr);
+}
+
+.f1-Item1{
+    grid-column: 2/4;
+    grid-row: 1/3;
+    background-color: #819dd0;
+    clip-path: circle(50% at 50% 50%);
+    /* Arriba | Derecha | Abajo | Izquierda */
+    margin: 25% ;
+}
+
+.f1-Item2{
+    grid-column: 4/5;
+    grid-row: 1/2;
+    background-color: red;
+    clip-path: polygon(55% 55%, 95% 55%, 95% 95%, 55% 95%);
+}
+
+.f1-Item3{
+    grid-column: 5/6;
+    grid-row: 1/2;
+    background-color:yellow;
+    clip-path: polygon(55% 55%, 95% 55%, 95% 95%, 55% 95%);
+}
+
+.f1-Item4{
+    grid-column: 6/7;
+    grid-row: 1/2;
+    background-color: green;
+    clip-path: polygon(55% 55%, 95% 55%, 95% 95%, 55% 95%);
+}
+
+.f1-Item5{
+    grid-column: 10/11;
+    grid-row: 3/13;
+    background-color: #ac191b;
+}
+
+.fondo-2{
+    grid-column: 2/10;
+    grid-row: 3/13;
+    background-color: rgba(201,28,30,255);
+    clip-path: polygon(0% 10%, 0% 100%, 100% 100%, 100% 0%, 75% 0%, 65% 10%);
+}
+
+.f2-Item1{
+    grid-column: 3/4;
+    grid-row: 11/12;
+    clip-path: circle(50% at 50% 50%);
+    background-color: #545259;
+}
+
+.f2-Item2{
+    grid-column: 4/8;
+    grid-row: 11/13;
+    z-index: 1;
+    background-color: #5e9348;
+    border-radius: 10px;
+    margin: 10%;
+    text-align: center;
+}
+
+.f2-Item2 a{
+    z-index: 2;
+    text-decoration: none;
+    color: #FFFF;
+    text-align: center;
+}
+
+.f2-Item3{
+    grid-column: 8/10;
+    grid-row: 11/13;
+    clip-path: polygon(0% 25%, 25% 25%, 25% 0%, 75% 0%, 75% 25%, 100% 25%, 100% 75%, 75% 75%, 75% 100%, 25% 100%, 25% 75%, 0% 75%);
+    background-color: #545259;
+    margin: 10%;
+}
+
+.f2-Item4{
+    grid-column: 4/8;
+    grid-row: 10/11;
+    margin-top: 10%;
+    align-items: center;
+    clip-path: polygon(0% 0,100% 0,100% 0%,100% 100%, 0 100%);
+}
+
+.f2-item4 input{    
+    width: 100%;
+}
+
+.fondo-3{
+    grid-column: 3/9;
+    grid-row: 5/10;
+    background-color:#d1d5cb;
+    clip-path: polygon(0% 0,100% 0,100% 0%,100% 100%, 92% 100%, 8% 100%,0 92%, 0 8%);
+}
+
+.f3-Item1{
+    grid-column: 4/5;
+    grid-row: 9/10;
+    clip-path: circle(50% at 50% 50%);
+    background-color: bisque;
+    margin: 20%;
+}
+
+.fondo-4{
+    background-color: white;
+    grid-column: 4/8;
+    grid-row: 6/9;
+    clip-path: polygon(0% 0,100% 0,100% 0%,100% 100%, 0 100%);
+}
+
+.fondo-5{
+    grid-column: 1/10;
+    grid-row: 3/13;
+    background-color: rgba(242,81,103,255);
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 10%, 35% 10%, 25% 0);
+}
+
+.f5-Item1{
+    grid-column: 2/9;
+    grid-row: 5/9;
+    clip-path: polygon(8% 0,92% 0,100% 8%,100% 92%, 92% 100%, 8% 100%,0 92%, 0 8%);
+    background-color:#d1d5cd;
+}
+
+.f5-Item2{
+    grid-column: 3/8;
+    grid-row: 6/8;
+    clip-path: polygon(0 0,100% 0,100% 100%, 0 100%);
+    background-color: #7ebe61;
+}
+
+.f5-Item3{
+    grid-column: 3/4;
+    grid-row: 10/11;
+    clip-path: polygon(0 0,100% 0,100% 100%, 0 100%);
+    background-color: #829dcf;
+}
+
+.f5-Item4{
+    grid-column: 4/5;
+    grid-row: 10/11;
+    clip-path: polygon(0 0,100% 0,100% 100%, 0 100%);
+    background-color: #7192ce;
+}
+
+.f5-Item5{
+    grid-column: 5/6;
+    grid-row: 10/11;
+    clip-path: polygon(0 0,100% 0,100% 100%, 0 100%);
+    background-color: #829dcf;
+}
+
+.f5-Item6{
+    grid-column: 6/7;
+    grid-row: 10/11;
+    clip-path: polygon(0 0,100% 0,100% 100%, 0 100%);
+    background-color: #7192ce;
+}
+
+.f5-Item7{
+    grid-column: 7/8;
+    grid-row: 10/11;
+    clip-path: polygon(0 0,100% 0,100% 100%, 0 100%);
+    background-color: #829dcf;
+}
+
+.f5-Item8{
+    grid-column: 3/4;
+    grid-row: 11/12;
+    clip-path: polygon(0 0,100% 0,100% 100%, 0 100%);
+    background-color: #7192ce;
+}
+
+.f5-Item9{
+    grid-column: 4/5;
+    grid-row: 11/12;
+    clip-path: polygon(0 0,100% 0,100% 100%, 0 100%);
+    background-color: #829dcf;
+}
+
+.f5-Item10{
+    grid-column: 5/6;
+    grid-row: 11/12;
+    clip-path: polygon(0 0,100% 0,100% 100%, 0 100%);
+    background-color: #7192ce;
+}
+
+.f5-Item11{
+    grid-column: 6/7;
+    grid-row: 11/12;
+    clip-path: polygon(0 0,100% 0,100% 100%, 0 100%);
+    background-color: #829dcf;
+}
+
+.f5-Item12{
+    grid-column: 7/8;
+    grid-row: 11/12;
+    clip-path: polygon(0 0,100% 0,100% 100%, 0 100%);
+    background-color: #7192ce;
+}
